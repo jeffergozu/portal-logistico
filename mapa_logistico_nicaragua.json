@@ -1,0 +1,1410 @@
+[
+  {
+    "destino": "Buenos Aires",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": 11.469,
+    "lng": -85.816
+  },
+  {
+    "destino": "Coperna",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Corinto",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": 12.4819,
+    "lng": -87.1733
+  },
+  {
+    "destino": "Corn Island",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": 12.1694,
+    "lng": -83.0418
+  },
+  {
+    "destino": "El Crucero",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": 11.9901,
+    "lng": -86.3095
+  },
+  {
+    "destino": "El Jicaro",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Tuma",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Guasaule",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Hacienda Iguana",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "KukraHill",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Batea",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Paz Carazo",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Laguna de Perlas",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Laurel Galan",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Maleconcito",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Muhan",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Puerto Viejo",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Rancheria",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Pedro del Norte (Rio Blanco)",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Tomas del Norte",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santa Rita",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Tipitapa",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": 12.1973,
+    "lng": -86.0971
+  },
+  {
+    "destino": "Tonalá",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Ubu Norte",
+    "decision": "NO PAGAR ENVÍO",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Achuapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Acoyapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Altagracia",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Banacruz",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Belen",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Bluefields",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.991,
+    "lng": -83.764
+  },
+  {
+    "destino": "Boaco",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.4722,
+    "lng": -85.6586
+  },
+  {
+    "destino": "Bonanza",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Camoapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "CARRETERA VIEJA A LEON",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Catarina",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Chichigalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Chinandega",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.6294,
+    "lng": -87.1311
+  },
+  {
+    "destino": "Cinco Pinos",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Ciudad Dario",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Comalapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Condega",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Cua",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Cuapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Cusmapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Diriá",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Diriamba",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.8581,
+    "lng": -86.2392
+  },
+  {
+    "destino": "Diriomo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Dolores",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Almendro",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Ayote",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Coral",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "EL NARANJO - Matagalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Rosario - Carazo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Sauce",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Triunfo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Tule",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "El Viejo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Empalme de Boaco",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Empalme San Benito",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Esquipulas - Matagalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Estelí",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 13.0919,
+    "lng": -86.3538
+  },
+  {
+    "destino": "Granada",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.9344,
+    "lng": -85.956
+  },
+  {
+    "destino": "Jalapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Jinotega",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 13.091,
+    "lng": -86.0014
+  },
+  {
+    "destino": "Jinotepe",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Juigalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.1063,
+    "lng": -85.3645
+  },
+  {
+    "destino": "Kubali",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Concepción",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Concordia",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Dalia",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Esperanza",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Libertad",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Palma",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Paz Centro",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "La Trinidad",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Larreynaga",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Las Azucenas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Las Banderas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Las Canoas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Las Esquinas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Leon",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.435,
+    "lng": -86.878
+  },
+  {
+    "destino": "Los Cedros",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "LOS CHILES",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Los Zarsales",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Malpaisillo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Managua Municipio",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.1364,
+    "lng": -86.2514
+  },
+  {
+    "destino": "Masachapa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Masatepe",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Masaya",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.9744,
+    "lng": -86.0942
+  },
+  {
+    "destino": "Matagalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.926,
+    "lng": -85.917
+  },
+  {
+    "destino": "Mateare",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Matiguas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Mina El Limón",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Moyogalpa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Mozonte",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Muelle de los Bueyes",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Mulukukú",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Muy Muy",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Nagarote",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Nandaime",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Nandasmo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Nindiri",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Niquinohomo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Nueva Guinea",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Ocotal",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 13.6326,
+    "lng": -86.4752
+  },
+  {
+    "destino": "Paiwas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Palacaguina",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Plan de Grama - Jinotega",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Posoltega",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Potosi",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Presilla",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Pueblo Nuevo Estelí",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Puerto Cabeza",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 14.0351,
+    "lng": -83.3888
+  },
+  {
+    "destino": "Puerto Esperanza",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Quezalguaque",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Quilali",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Rama",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Rancho Grande",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Rio Blanco",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Rivas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.4372,
+    "lng": -85.8263
+  },
+  {
+    "destino": "Rosita",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Benito",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Carlos",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Dionisio",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Fernando",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Isidro",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Jacinto",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Jorge",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Jose de Bocay",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Jose de los Remates",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Juan de Limay",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Juan de oriente",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Juan Del Rio Coco",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Juan del Sur",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 11.2529,
+    "lng": -85.8705
+  },
+  {
+    "destino": "San Lorenzo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Marcos",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Miguelito",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Nicolas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Patricio",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Pedro de Lovago",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Rafael del Norte",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Rafael del Sur",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "San Ramon",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santa Lucia",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santa Maria de Pantasma",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santa Rosa Del Peñon",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santa Teresa",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santo Domingo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Santo Tomas",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Sebaco",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.8537,
+    "lng": -86.1003
+  },
+  {
+    "destino": "Siuna",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Somotillo",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Somoto",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 13.4808,
+    "lng": -86.5821
+  },
+  {
+    "destino": "Tecolostote",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Telica",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Telpaneca",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Terrabona",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Teustepe",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Ticuantepe",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": 12.0226,
+    "lng": -86.2049
+  },
+  {
+    "destino": "Tierra Azul",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Tisma",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Tola",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Villa 15 de Julio",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Villa del Carmen",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Villa nueva",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Villa Sandino",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Wapi",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Waslala",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Waspan",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Wiwili",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Yalaguina",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Yali",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "Total",
+    "decision": "PAGAR ENVÍO",
+    "estado": "POSITIVO",
+    "color": "#22c55e",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "",
+    "decision": "",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "destino": "No se han aplicado filtros",
+    "decision": "",
+    "estado": "NEGATIVO",
+    "color": "#ef4444",
+    "lat": null,
+    "lng": null
+  }
+]

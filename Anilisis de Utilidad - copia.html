@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Centro de Inteligencia Logística</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<style>
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:
+    radial-gradient(circle at top left,#1e293b 0%,#020617 40%),
+    linear-gradient(135deg,#020617,#0f172a);
+
+    color:white;
+
+    font-family:'Segoe UI',sans-serif;
+
+    overflow-x:hidden;
+}
+
+.main-container{
+
+    max-width:1700px;
+
+    margin:auto;
+
+    position:relative;
+}
+
+/* =====================================================
+   EFECTOS FONDO
+===================================================== */
+
+.bg-glow{
+
+    position:fixed;
+
+    width:600px;
+    height:600px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(56,189,248,0.10),
+    transparent 70%);
+
+    top:-200px;
+    right:-150px;
+
+    z-index:-1;
+
+    animation:floatGlow 10s ease-in-out infinite;
+}
+
+.bg-glow2{
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(250,204,21,0.08),
+    transparent 70%);
+
+    bottom:-200px;
+    left:-100px;
+
+    z-index:-1;
+
+    animation:floatGlow 14s ease-in-out infinite;
+}
+
+/* =====================================================
+   ANIMACIONES
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+@keyframes glowPulse{
+
+    0%{
+        box-shadow:0px 0px 10px rgba(250,204,21,0.05);
+    }
+
+    50%{
+        box-shadow:0px 0px 30px rgba(250,204,21,0.12);
+    }
+
+    100%{
+        box-shadow:0px 0px 10px rgba(250,204,21,0.05);
+    }
+}
+
+@keyframes floatGlow{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(30px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes borderFlow{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@keyframes shine{
+
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.25);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+
+    margin:24px;
+
+    padding:28px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.92),
+    rgba(17,24,39,0.96));
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:
+    fadeUp 1s ease-out,
+    glowPulse 6s infinite ease-in-out;
+}
+
+.header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(90deg,
+    transparent,
+    rgba(255,255,255,0.03),
+    transparent);
+
+    transform:translateX(-100%);
+
+    animation:shine 8s infinite linear;
+}
+
+.header-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.title-section h1{
+
+    font-size:44px;
+
+    color:#facc15;
+
+    font-weight:800;
+}
+
+.title-section span{
+
+    color:#38bdf8;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+}
+
+.header-description{
+
+    margin-top:18px;
+
+    font-size:13px;
+
+    line-height:2;
+
+    color:#dbe4f0;
+
+    max-width:1200px;
+}
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status-panel{
+
+    background:
+    linear-gradient(135deg,
+    rgba(34,197,94,0.12),
+    rgba(15,118,110,0.12));
+
+    border:1px solid rgba(34,197,94,0.18);
+
+    padding:14px 18px;
+
+    border-radius:18px;
+
+    min-width:240px;
+}
+
+.status-title{
+
+    color:#22c55e;
+
+    font-size:12px;
+
+    font-weight:700;
+}
+
+.status-text{
+
+    margin-top:8px;
+
+    font-size:11px;
+
+    color:#dcfce7;
+
+    line-height:1.8;
+}
+
+/* =====================================================
+   KPI
+===================================================== */
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:18px;
+
+    margin:24px;
+}
+
+.kpi-card{
+
+    padding:22px;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.95),
+    rgba(30,41,59,0.92));
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    transition:all .4s ease;
+
+    animation:
+    fadeUp 1s ease-out,
+    glowPulse 8s infinite ease-in-out;
+}
+
+.kpi-card:hover{
+
+    transform:
+    translateY(-6px)
+    scale(1.02);
+}
+
+.kpi-title{
+
+    font-size:11px;
+
+    color:#94a3b8;
+
+    letter-spacing:2px;
+}
+
+.kpi-value{
+
+    margin-top:12px;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:#facc15;
+}
+
+.kpi-desc{
+
+    margin-top:10px;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+    color:#dbe4f0;
+}
+
+/* =====================================================
+   PANEL EXPLICATIVO
+===================================================== */
+
+.explanation{
+
+    margin:24px;
+
+    padding:24px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.96),
+    rgba(17,24,39,0.96));
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    animation:
+    fadeUp 1s ease-out,
+    glowPulse 8s infinite ease-in-out;
+}
+
+.explanation h2{
+
+    color:#38bdf8;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+}
+
+.explanation p{
+
+    font-size:13px;
+
+    line-height:2.2;
+
+    color:#dbe4f0;
+}
+
+/* =====================================================
+   MAPA
+===================================================== */
+
+.map-section{
+
+    margin:24px;
+}
+
+.map-frame{
+
+    position:relative;
+
+    padding:22px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.97),
+    rgba(17,24,39,0.98));
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    overflow:hidden;
+
+    animation:
+    fadeUp 1s ease-out,
+    glowPulse 8s infinite ease-in-out;
+}
+
+.map-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #38bdf8,
+    #facc15,
+    #22c55e,
+    #38bdf8);
+
+    background-size:300% 300%;
+
+    animation:borderFlow 8s linear infinite;
+
+    z-index:-1;
+
+    filter:blur(14px);
+
+    opacity:0.25;
+}
+
+.map-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.map-title{
+
+    font-size:28px;
+
+    color:#38bdf8;
+
+    font-weight:800;
+}
+
+.map-subtitle{
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    color:#dbe4f0;
+
+    line-height:1.8;
+
+    max-width:900px;
+}
+
+.map-badge{
+
+    background:
+    linear-gradient(90deg,#facc15,#fde047);
+
+    color:#020617;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:11px;
+
+    font-weight:800;
+}
+
+.map-wrapper{
+
+    background:#020617;
+
+    border-radius:24px;
+
+    padding:8px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    overflow:hidden;
+}
+
+#map{
+
+    width:100%;
+
+    height:82vh;
+
+    min-height:700px;
+
+    border-radius:18px;
+
+    background:#020617;
+}
+
+/* =====================================================
+   POWER BI
+===================================================== */
+
+.bi-section{
+
+    margin:24px;
+}
+
+.bi-frame{
+
+    position:relative;
+
+    padding:22px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.97),
+    rgba(17,24,39,0.98));
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    overflow:hidden;
+}
+
+.bi-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #38bdf8,
+    #facc15,
+    #22c55e,
+    #38bdf8);
+
+    background-size:300% 300%;
+
+    animation:borderFlow 8s linear infinite;
+
+    z-index:-1;
+
+    filter:blur(14px);
+
+    opacity:0.25;
+}
+
+.bi-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.bi-title{
+
+    font-size:26px;
+
+    color:#38bdf8;
+
+    font-weight:800;
+}
+
+.bi-subtitle{
+
+    margin-top:8px;
+
+    font-size:12px;
+
+    color:#dbe4f0;
+
+    line-height:1.8;
+
+    max-width:900px;
+}
+
+.bi-badge{
+
+    background:
+    linear-gradient(90deg,#facc15,#fde047);
+
+    color:#020617;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:11px;
+
+    font-weight:800;
+}
+
+.bi-wrapper{
+
+    background:#020617;
+
+    border-radius:24px;
+
+    padding:8px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    overflow:hidden;
+}
+
+iframe{
+
+    width:100%;
+
+    height:82vh;
+
+    min-height:700px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#020617;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    margin:24px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(145deg,
+    rgba(15,23,42,0.95),
+    rgba(17,24,39,0.95));
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    text-align:center;
+
+    font-size:12px;
+
+    line-height:2;
+
+    color:#94a3b8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-glow2"></div>
+
+<div class="main-container">
+
+<div class="header">
+
+<div class="header-top">
+
+<div class="title-section">
+
+<span>Centro Ejecutivo</span>
+
+<h1>🚚 Inteligencia Logística</h1>
+
+</div>
+
+<div class="status-panel">
+
+<div class="status-title">
+● SISTEMA OPERATIVO
+</div>
+
+<div class="status-text">
+
+Monitoreo financiero y logístico en tiempo real.
+
+<br><br>
+
+Integración Power BI + HTML + Inteligencia Geoespacial.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="header-description">
+
+Plataforma desarrollada desde el Área de Distribución orientada a transformar
+información operativa y financiera en inteligencia estratégica corporativa.
+
+</div>
+
+</div>
+
+<!-- KPI -->
+
+<div class="kpi-grid">
+
+<div class="kpi-card">
+
+<div class="kpi-title">
+RENTABILIDAD
+</div>
+
+<div class="kpi-value">
+Utilidad
+</div>
+
+<div class="kpi-desc">
+Evaluación financiera considerando costos logísticos.
+</div>
+
+</div>
+
+<div class="kpi-card">
+
+<div class="kpi-title">
+CLIENTES
+</div>
+
+<div class="kpi-value">
+Clasificación
+</div>
+
+<div class="kpi-desc">
+Identificación de subsidios logísticos improductivos.
+</div>
+
+</div>
+
+<div class="kpi-card">
+
+<div class="kpi-title">
+DESTINOS
+</div>
+
+<div class="kpi-value">
+Evaluación
+</div>
+
+<div class="kpi-desc">
+Clasificación geoespacial de sostenibilidad logística.
+</div>
+
+</div>
+
+<div class="kpi-card">
+
+<div class="kpi-title">
+DISTRIBUCIÓN
+</div>
+
+<div class="kpi-value">
+Inteligencia
+</div>
+
+<div class="kpi-desc">
+Conversión de datos operativos en decisiones estratégicas.
+</div>
+
+</div>
+
+</div>
+
+<!-- EXPLICACIÓN -->
+
+<div class="explanation">
+
+<h2>
+📊 Inteligencia Estratégica Operativa
+</h2>
+
+<p>
+
+El modelo consolida indicadores de utilidad, sostenibilidad operativa,
+comportamiento de clientes y clasificación de destinos para identificar
+deterioros financieros relacionados al costo logístico y operaciones no sostenibles.
+
+</p>
+
+</div>
+
+<!-- MAPA -->
+
+<div class="map-section">
+
+<div class="map-frame">
+
+<div class="map-header">
+
+<div>
+
+<div class="map-title">
+🗺 Centro Geoespacial Logístico
+</div>
+
+<div class="map-subtitle">
+
+Visualización geográfica conectada a clasificación real
+de destinos según comportamiento financiero consolidado.
+
+</div>
+
+</div>
+
+<div class="map-badge">
+MAPA LIVE
+</div>
+
+</div>
+
+<div class="map-wrapper">
+
+<div id="map"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- POWER BI -->
+
+<div class="bi-section">
+
+<div class="bi-frame">
+
+<div class="bi-header">
+
+<div>
+
+<div class="bi-title">
+📈 Dashboard Integrado Power BI
+</div>
+
+<div class="bi-subtitle">
+
+Visualización centralizada de indicadores financieros,
+utilidad logística y sostenibilidad operativa.
+
+</div>
+
+</div>
+
+<div class="bi-badge">
+POWER BI LIVE
+</div>
+
+</div>
+
+<div class="bi-wrapper">
+
+<iframe
+title="Fullcosting-FINAL"
+src="https://app.powerbi.com/reportEmbed?reportId=05fd5763-9019-41c3-8eb9-7b77abdb5261&autoAuth=true&ctid=2d3c1946-4b0b-479c-9516-c7c1bb37b2ab&filterPaneEnabled=false"
+allowFullScreen="true">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🚀 Plataforma corporativa orientada a sostenibilidad logística,
+control de pérdidas y optimización financiera.
+
+</div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+
+/* =====================================================
+   MAPA
+===================================================== */
+
+var map = L.map('map', {
+
+    zoomControl:false
+
+}).setView([12.8654, -85.2072], 8);
+
+/* =====================================================
+   CAPA OSCURA
+===================================================== */
+
+L.tileLayer(
+
+'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+
+{
+    attribution:''
+
+}).addTo(map);
+
+/* =====================================================
+   ICONOS
+===================================================== */
+
+function createGlowIcon(color){
+
+    return L.divIcon({
+
+        className:'',
+
+        html:`
+
+        <div style="
+
+            width:18px;
+            height:18px;
+
+            border-radius:50%;
+
+            background:${color};
+
+            box-shadow:
+            0px 0px 12px ${color},
+            0px 0px 26px ${color};
+
+            animation:pulse 2s infinite;
+
+        "></div>
+
+        `,
+
+        iconSize:[20,20]
+
+    });
+
+}
+
+/* =====================================================
+   JSON
+===================================================== */
+
+fetch("./mapa_logistico_nicaragua.json")
+
+.then(response => response.json())
+
+.then(data => {
+
+    console.log("JSON CARGADO:",data);
+
+    data.forEach(punto => {
+
+        let destino =
+            punto.destino ||
+            punto.Destino ||
+            "SIN DESTINO";
+
+        let decision =
+            punto.decision ||
+            punto["Decisión Destino"] ||
+            punto["Decision Destino"] ||
+            "SIN CLASIFICAR";
+
+        let lat =
+            parseFloat(
+                punto.lat ||
+                punto.latitude ||
+                punto.Lat
+            );
+
+        let lng =
+            parseFloat(
+                punto.lng ||
+                punto.lon ||
+                punto.longitude ||
+                punto.Lng
+            );
+
+        let estado;
+        let color;
+
+        if(decision === "PAGAR ENVÍO"){
+
+            estado = "POSITIVO";
+            color = "#22c55e";
+
+        }else{
+
+            estado = "NEGATIVO";
+            color = "#ef4444";
+        }
+
+        if(!isNaN(lat) && !isNaN(lng)){
+
+            let marker = L.marker(
+
+                [lat,lng],
+
+                {
+                    icon:createGlowIcon(color)
+                }
+
+            ).addTo(map);
+
+            marker.bindPopup(`
+
+                <div style="
+                    font-family:Segoe UI;
+                    min-width:240px;
+                    padding:10px;
+                    color:#020617;
+                ">
+
+                    <h3 style="
+                        margin-bottom:8px;
+                        color:${color};
+                    ">
+                        📍 ${destino}
+                    </h3>
+
+                    <hr style="
+                        border:0.5px solid #cbd5e1;
+                        margin:10px 0;
+                    ">
+
+                    <div style="
+                        font-size:13px;
+                        line-height:1.8;
+                    ">
+
+                        <b>Decisión:</b>
+                        ${decision}
+
+                        <br><br>
+
+                        <b>Estado:</b>
+                        ${estado}
+
+                    </div>
+
+                </div>
+
+            `);
+
+        }else{
+
+            console.log("SIN COORDENADAS:",destino);
+
+        }
+
+    });
+
+})
+
+.catch(error => {
+
+    console.log("ERROR JSON:",error);
+
+});
+
+</script>
+
+</body>
+</html>
